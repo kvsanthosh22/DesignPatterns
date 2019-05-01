@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8908a916-7eb5-494a-b11b-86cc8794b9af" name="Default Changelist" comment="Strategy Deisgn patttern">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignPatterns.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problem/strategypattern/Bumrah_P.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problem/strategypattern/CricketPlayer_P.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problem/strategypattern/Sehwag_P.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Bumrah_S.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/players/CricketPlayers_S.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Sehwag_S.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/BattingSkills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/BowlingSkills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/FieldingSkills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/AverageBatsman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/BestBatsman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/NotABatsman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/AverageBowler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/BestBowler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/NotABowler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/AverageFielder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/BestFielder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/NotAFielder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umldiagrams/strategypattern/problem/StrategyPattern_ProblemUML.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umldiagrams/strategypattern/solution/StrategyPattern_SolutionUML.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/problem/strategypattern/TestCricketPlayers_P.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/solution/TestCricketPlayers_S.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/problem/strategypattern/Bumrah_P.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/problem/strategypattern/CricketPlayer_P.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/problem/strategypattern/Sehwag_P.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/players/Bumrah_S.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/players/CricketPlayers_S.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/players/Sehwag_S.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/BattingSkills.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/BowlingSkills.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/FieldingSkills.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/batting/AverageBatsman.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/batting/BestBatsman.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/batting/NotABatsman.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/bowling/AverageBowler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/bowling/BestBowler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/bowling/NotABowler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/fielding/AverageFielder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/fielding/BestFielder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/solution/strategypattern/skills/fielding/NotAFielder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/problem/strategypattern/TestCricketPlayers_P.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/solution/TestCricketPlayers_S.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CodeIris Favorites" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/players/CricketPlayers_S.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1216#1217#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Sehwag_S.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Bumrah_S.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/solution/TestCricketPlayers_S.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/problem/strategypattern/CricketPlayer_P.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="UML Sequence" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/problem/strategypattern/Sehwag.java" />
+        <option value="$PROJECT_DIR$/src/test/java/problem/strategypattern/TestCricketPlayers_P.java" />
+        <option value="$PROJECT_DIR$/src/main/java/problem/strategypattern/Bumrah_P.java" />
+        <option value="$PROJECT_DIR$/src/main/java/problem/strategypattern/Sehwag_P.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/BestBatsman.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/BattingSkills.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/AverageBatsman.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/NotABatsman.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/BowlingSkills.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/BestBowler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/AverageBowler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/NotABowler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/FieldingSkills.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/BestFielder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/AverageFielder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/NotAFielder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/players/CricketPlayers_S.java" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Bumrah_S.java" />
+        <option value="$PROJECT_DIR$/src/test/java/solution/TestCricketPlayers_S.java" />
+        <option value="$PROJECT_DIR$/src/main/java/problem/strategypattern/CricketPlayer_P.java" />
+        <option value="$PROJECT_DIR$/src/main/java/problem/strategypattern_problem.puml" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategy.puml" />
+        <option value="$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Sehwag_S.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesignPatterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesignPatterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Sequence" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556729202758" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestCricketPlayers_S.testMySkills">
+    <configuration name="TestCricketPlayers_P" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="problem.strategypattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="problem.strategypattern" />
+      <option name="MAIN_CLASS_NAME" value="problem.strategypattern.TestCricketPlayers_P" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCricketPlayers_P.testCricketers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="problem.strategypattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="problem.strategypattern" />
+      <option name="MAIN_CLASS_NAME" value="problem.strategypattern.TestCricketPlayers_P" />
+      <option name="METHOD_NAME" value="testCricketers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCricketPlayers_S.testMySkills" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="solution" />
+      <option name="MAIN_CLASS_NAME" value="solution.TestCricketPlayers_S" />
+      <option name="METHOD_NAME" value="testMySkills" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestCricketPlayers_S.testMySkills" />
+        <item itemvalue="JUnit.TestCricketPlayers_P" />
+        <item itemvalue="JUnit.TestCricketPlayers_P.testCricketers" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8908a916-7eb5-494a-b11b-86cc8794b9af" name="Default Changelist" comment="" />
+      <created>1556722603569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556722603569</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestCricketPlayers_P_testCricketers - 2019.05.01 at 20h 40m 14s.xml">
+      <configuration name="TestCricketPlayers_P.testCricketers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCricketPlayers_P_testCricketers - 2019.05.01 at 20h 40m 50s.xml">
+      <configuration name="TestCricketPlayers_P.testCricketers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCricketPlayers_P_testCricketers - 2019.05.01 at 20h 42m 48s.xml">
+      <configuration name="TestCricketPlayers_P.testCricketers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCricketPlayers_P - 2019.05.01 at 20h 47m 56s.xml">
+      <configuration name="TestCricketPlayers_P" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCricketPlayers_P - 2019.05.01 at 20h 48m 27s.xml">
+      <configuration name="TestCricketPlayers_P" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCricketPlayers_S_testMySkills - 2019.05.01 at 21h 07m 06s.xml">
+      <configuration name="TestCricketPlayers_S.testMySkills" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2590604" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" visible="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50512445" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="PlantUML" order="8" weight="0.4691275" />
+      <window_info anchor="right" id="Code Iris" order="9" weight="0.490604" />
+      <window_info anchor="right" id="simpleUML" order="10" weight="0.3295302" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/problem/strategypattern/Bumrah_P.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/problem/strategypattern/TestCricketPlayers_P.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/problem/strategypattern/Sehwag_P.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding>
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/BestBatsman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="79" selection-start-line="6" selection-start-column="79" selection-end-line="6" selection-end-column="79" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/NotABatsman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/BowlingSkills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/BestBowler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/AverageBowler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="77" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
+          <folding>
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/bowling/NotABowler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/FieldingSkills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/BestFielder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/AverageFielder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding>
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/fielding/NotAFielder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/batting/AverageBatsman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/skills/BattingSkills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/problem/strategypattern_problem.puml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/players/CricketPlayers_S.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Bumrah_S.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/solution/TestCricketPlayers_S.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/problem/strategypattern/CricketPlayer_P.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategy.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/solution/strategypattern/players/Sehwag_S.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile1" value="file://$PROJECT_DIR$/../test.suml" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/StrategyPattern_Problem.suml" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
+  </component>
+</project>
