@@ -5,4 +5,8 @@
 # 2. Observer Pattern
   Defines one to many dependency on object, if one state changes all its dependents are notified and updated automatically.
    ![alt text](https://github.com/kvsanthosh22/DesignPatterns/blob/master/src/main/java/umldiagrams/observerpattern/ObserverPattern.png)
+# 3. Decorator Pattern
+  Attaches additional responsibility to an object at runtime dynamically. Provides flexible alternative to subclasses for extending functionally.
+   ![alt text](https://github.com/kvsanthosh22/DesignPatterns/blob/master/src/main/java/umldiagrams/decoratorpattern/decoratorPattern.png)
+
 		
